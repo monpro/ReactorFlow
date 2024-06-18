@@ -1,0 +1,16 @@
+{
+  "name": "ReactorFlow",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/monpro/ReactorFlow.git",
+  "author": "monpro <monproshen@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.14.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "scripts": {
+    "start": "ts-node ./src/main.ts"
+  }
+}
