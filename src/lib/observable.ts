@@ -37,6 +37,9 @@ export default class Observable<T> {
      * This example first maps (multiplies) each data item by 2, then filters out items that are 10 or less.
      */
     pipe(...operations: Array<(source: Observable<any>) => Observable<any>>): Observable<any> {
-        return operations.reduce<Observable<any>>((prev, op) => op(prev), this);
+        return operations.reduce<Observable<any>>(
+            (prev, op) => op(prev), // Apply each operation one by one to the observable
+            this                    // Start with the current observable
+        );
     }
 }
