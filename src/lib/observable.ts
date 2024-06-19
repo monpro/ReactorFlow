@@ -2,7 +2,7 @@
 import {Observer, Subscription} from "../types/observer";
 import Subscriber from "./subscriber";
 
-class Observable<T> {
+export default class Observable<T> {
     // The constructor accepts a subscriber function that takes a Subscriber<T>
     constructor(private subscribeFn: (subscriber : Subscriber<T>) => void) {
     }
